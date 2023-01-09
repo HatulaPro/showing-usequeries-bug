@@ -1,6 +1,6 @@
 # useQueries tRPC bug
 
-A small bug that causes tRPC to miss the query options that are passed to useQueries.
+A small bug that causes tRPC to miss the query options that are passed to useQueries. Live example: [#](https://showing-usequeries-bug.vercel.app/).
 
 ### Issue:
 
