@@ -36,7 +36,7 @@ const Home: NextPage = () => {
           ))}
         </div>
         <p>
-          <b>Explanation:</b> Notice that all queries are have{" "}
+          <b>Explanation:</b> Notice that all queries have{" "}
           <span className="inline-block bg-slate-800">
             {"{ enabled: false }"}
           </span>{" "}
