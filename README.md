@@ -13,7 +13,7 @@ A small bug that causes tRPC to miss the query options that are passed to useQue
           enabled: false,
           onSuccess: () => {
             // I can write whatever I want here, it will never execute!
-            console.log("QUERY", x, "COMPLETED (not really)");
+            console.log("QUERY", x, "COMPLETED");
           },
         }
       )
@@ -21,7 +21,7 @@ A small bug that causes tRPC to miss the query options that are passed to useQue
   });
   ```
 
-In that case, the options object is irrelevant, and tRPC completely ignores it.
+Because of this bug, tRPC completely ignores the options object. The queries will be executed "normally", they will not be disabled and the callback will never be called.
 
 ### Temporary fix:
 
